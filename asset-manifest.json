@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Raghul-PK/Buildd-PK/static/css/main.bbc757e7.css",
-    "main.js": "/Raghul-PK/Buildd-PK/static/js/main.33805642.js",
-    "index.html": "/Raghul-PK/Buildd-PK/index.html",
-    "main.bbc757e7.css.map": "/Raghul-PK/Buildd-PK/static/css/main.bbc757e7.css.map",
-    "main.33805642.js.map": "/Raghul-PK/Buildd-PK/static/js/main.33805642.js.map"
+    "main.css": "/Buildd-PK/static/css/main.bbc757e7.css",
+    "main.js": "/Buildd-PK/static/js/main.33805642.js",
+    "index.html": "/Buildd-PK/index.html",
+    "main.bbc757e7.css.map": "/Buildd-PK/static/css/main.bbc757e7.css.map",
+    "main.33805642.js.map": "/Buildd-PK/static/js/main.33805642.js.map"
   },
   "entrypoints": [
     "static/css/main.bbc757e7.css",
