@@ -1,38 +1,99 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .App {
-  text-align: center;
+  position: relative;
+  min-height: 100vh; /* Ensure the content takes up at least the full height of the viewport */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loading-bar-container {
+  position: absolute;
+  top: 40px; /* Adjust this value to control the distance from the bottom */
+  left: 50%; /* Position at the horizontal center */
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loading-bar {
+  height: 80%;
+  background-color: #FF7F00;
+  transition: width 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.leftHalf {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+}
+
+.image {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+}
+
+.rightHalf {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.rightHalf Button{
+  width: 60%;
+  margin: 10px;
+  min-height: 70px;
+  border-width: 1px;
+  color:black;
+  text-transform: none;
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bottomBar {
+  position: absolute;
+  bottom: -20px; /* Adjust this value to control the distance from the bottom */
+  left: 50%; /* Position at the horizontal center */
+  transform: translateX(-50%);
+  width:40vw;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px 20px 50px 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottomBar Button{
+  text-transform: none;
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  width: 80%;
+  color:snow;
 }

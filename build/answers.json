@@ -1,0 +1,80 @@
+[
+    {
+        "type": "MCQ",
+        "img_path": "question_images/1.jpg",
+        "options": ["The process of buying products", 
+            "The process of selling and promoting products and services",
+            "Learning about market trends"],
+        "answer": 1,
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/2.jpg",
+        "options": ["Best friends", 
+            "Target audience",
+            "Neighbours"],
+        "answer": 1,
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/3.jpg",
+        "options": ["Market Research", 
+            "Creating a Marketing plan",
+            "Product Launch"],
+        "answer": 0,
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/4.jpg",
+        "options": ["Anyone who buys products", 
+            "All people in the market",
+            "A specific group of potential customers"],
+        "answer": 2,
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/5.jpg",
+        "options": ["Interviewing people to help sell the lemonade", 
+            "Keeping track of how many cups of lemonade you've sold",
+            "Shouting \"Fresh lemonade here!\" to attract customers"],
+        "answer": 2,
+        "explanation": ""
+    },
+    {
+        "type": "True-False",
+        "img_path": "question_images/6.jpg",
+        "answer": "true",
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/7.jpg",
+        "options": ["All parents", 
+            "All children",
+            "Parents with young children"],
+        "answer": 2,
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/8.jpg",
+        "options": ["Target marketing", 
+            "Market Research",
+            "Branding"],
+        "answer": 1,
+        "explanation": ""
+    },
+    {
+        "type": "MCQ",
+        "img_path": "question_images/9.jpg",
+        "options": ["Target audience", 
+            "Favorite sport",
+            "Best drink flavour"],
+        "answer": 0,
+        "explanation": ""
+    }
+]
