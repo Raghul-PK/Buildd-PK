@@ -171,7 +171,15 @@ function App() {
   return (
     <div className="App">
       <LoadingBar/>
-      <p>Hello!</p>
+      <Popup trigger={<button>Open Popup</button>} modal>
+        {close => (
+          <div className="popup-content">
+            <button className="close-btn" onClick={close}>X</button>
+            <h2>This is the Popup</h2>
+            <p>Popup content goes here...</p>
+          </div>
+        )}
+      </Popup>
       <div className="container">
         <div className="leftHalf">
           <img src={questions[questionNo]["img_path"]} className="image"/>
