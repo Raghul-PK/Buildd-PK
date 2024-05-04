@@ -171,6 +171,7 @@ function App() {
   return (
     <div className="App">
       <LoadingBar/>
+      <p>Hello!</p>
       <div className="container">
         <div className="leftHalf">
           <img src={questions[questionNo]["img_path"]} className="image"/>
