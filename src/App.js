@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Button from '@mui/material/Button';
 import './App.css'; // Import your CSS file for styling
 import Confetti from 'react-confetti';
+import Popup from 'reactjs-popup';
 
 let questions = [
   {
