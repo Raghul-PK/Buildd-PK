@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   overflow: hidden;
   margin: 0;
@@ -96,4 +100,71 @@ body {
   font-size: large;
   width: 80%;
   color:snow;
+}
+
+.sideBar {
+  position: absolute;
+  top: 10%; /* Adjust this value to control the distance from the bottom */
+  right: -15px; /* Position at the horizontal center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 10px;
+}
+
+.sideBar .note{
+  text-transform: none;
+  font-family: "Andika", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  color:snow;
+}
+
+.popUp {
+  position: absolute;
+  top: 2%; 
+  right: 10px; 
+  width: 30%;
+  height: 96%;
+  background-color: #FEFFC1;
+  border: 1px solid #FFC369;
+  border-radius: 5px;
+  color: black;
+}
+
+#popup-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FFC369;
+  margin-bottom: 10px;
+  font-size: 18px; /* Set text size to 18 pixels */
+  font-weight: bold; /* Set text boldness */
+  padding: 0 20px;
+}
+
+
+#popup-title-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 20px;
+  font-weight: bold; /* Set text boldness */
+}
+
+.popUp textarea{
+  box-sizing: border-box;
+  border: none;
+  background-color: #FEFFC1;
+  width: 90%;
+  height: 80%;
+  margin: 0px 10px;
+  padding: 10px;
+  font-family: "Andika", sans-serif;
+  font-style: normal;
+  font-size: 15px;
 }

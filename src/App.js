@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import Button from '@mui/material/Button';
 import './App.css'; // Import your CSS file for styling
 import Confetti from 'react-confetti';
@@ -132,6 +132,52 @@ function App() {
     );
   };
 
+  const PopUpNote = () => {
+    const [noteOpen, setNoteOpen] = useState(false);
+    const [noteVal, setNoteVal] = useState("");
+    const myTextarea = useRef(null);
+
+    const toggleNoteOpen = () => {
+      setNoteOpen(!noteOpen);
+    };
+
+    return (
+      <>
+        {!noteOpen && <div className="sideBar">
+          <Button className="note" variant="outlined" 
+            style={{backgroundColor: '#FEFFC1', border: '1px solid #FFC369', borderRadius: '5px', 'color':'black'}}
+            onClick={toggleNoteOpen}>Note</Button>
+        </div>}
+        {noteOpen && 
+        <div className='popUp'>
+          <div id="popup-title-bar">
+            <p id="popup-title">Notes</p>
+            <button onClick={toggleNoteOpen}>X</button>
+          </div>
+          <textarea 
+            value={localStorage.getItem('note') === null ? 
+              "Note: Clear this space and add your ideas here...\n\n" +
+              "- Target Audience: Explore more on this ???\n" +
+              "- How do companies reach their target audience?\n\n\n" +
+              "- How can I join Buildd?\n" +
+              "  - Possible ideas\n" +
+              "    - Show them your love for Buildding stuff\n" +
+              "    - Show them you are a little consistent" :
+              localStorage.getItem('note')}
+
+            ref={myTextarea} 
+            name="paragraph_text" 
+            onChange={(event)=>
+              {
+                console.log(event.target.value);
+                setNoteVal(event.target.value);
+                localStorage.setItem('note', event.target.value);
+              }}></textarea>
+        </div>}
+      </>
+    );
+  }; 
+
   const SubmitButton= () => {
     if (answerStatus=="correct")
     {
@@ -172,15 +218,6 @@ function App() {
   return (
     <div className="App">
       <LoadingBar/>
-      <Popup trigger={<button>Open Popup</button>} modal>
-        {close => (
-          <div className="popup-content">
-            <button className="close-btn" onClick={close}>X</button>
-            <h2>This is the Popup</h2>
-            <p>Popup content goes here...</p>
-          </div>
-        )}
-      </Popup>
       <div className="container">
         <div className="leftHalf">
           <img src={questions[questionNo]["img_path"]} className="image"/>
@@ -200,6 +237,7 @@ function App() {
         </div>
         {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
       </div>
+      <PopUpNote/>
       <SubmitButton/>
     </div>
   );
