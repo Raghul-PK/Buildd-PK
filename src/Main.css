@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #FF7F00;
+}
+
+.header .usermenu-box{
+    margin-left: 30px;
+}
+
+.header .usermenu-icon{
+    font-size: 50px;
+    color: white;
+}
+
+.header .rewards-box{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.header .reward-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100px;
+    background-color: #FEFFC1;
+    border-radius: 25px;
+    border-bottom: 5px solid #FFC369;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.header .reward-icon{
+    font-size: 30px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 80px;
+    width: 330px;
+    background-color: #FEFFC1;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 40px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .menu-option{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width:100px;
+    border: none;
+    background-color: #FEFFC1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.footer .menu-option:hover{
+    background-color: #FFC369;
+}
+
+.footer .menu-icon{
+    font-size: 30px;
+}
+
+#home-menu{
+    border-radius: 40px 10px 10px 40px;
+}
+
+#learn-menu{
+    border-radius: 10px 10px 10px 10px;
+}
+
+#social-menu{
+    border-radius: 10px 40px 40px 10px;
+}
+
+.screen{
+    margin: 20px 20% 0 20%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.screen h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 10px 250px 10px;
+  }
+
+.card {
+    height: 200px;
+    width: 200px;
+    background-color: #FEFFC1;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
