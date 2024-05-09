@@ -1,16 +1,18 @@
 *{
   box-sizing: border-box;
+  font-family: "Andika", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   overflow: hidden;
   margin: 0;
-  font-family: "Andika", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-.App {
+.Quiz {
   position: relative;
   min-height: 100vh; /* Ensure the content takes up at least the full height of the viewport */
   display:flex;
@@ -79,7 +81,7 @@ body {
   font-style: normal;
 }
 
-.bottomBar {
+.submitBar {
   position: absolute;
   bottom: -20px; /* Adjust this value to control the distance from the bottom */
   left: 50%; /* Position at the horizontal center */
@@ -90,9 +92,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px 20px 50px 20px;
+  border: none;
 }
 
-.bottomBar Button{
+.submitBar Button{
   text-transform: none;
   font-family: "Andika", sans-serif;
   font-weight: 700;
@@ -102,68 +105,66 @@ body {
   color:snow;
 }
 
-.sideBar {
-  position: absolute;
-  top: 10%; /* Adjust this value to control the distance from the bottom */
-  right: -15px; /* Position at the horizontal center */
+.side-icon{
+  position: fixed;
+  top: 10%;
+  right: 0px;
+  padding: 5px 5px 5px 20px;
+  background-color: #FEFFC1;
+  border-radius: 20px 0 0 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 10px;
+  justify-content: space-evenly;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #FFC369;
 }
 
-.sideBar .note{
-  text-transform: none;
-  font-family: "Andika", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: large;
-  color:snow;
+.icon-text {
+  display: none;
 }
 
-.popUp {
+/* Increase size on hover */
+.side-icon:hover {
+  width: 150px; /* Increase width */
+}
+
+.side-icon:hover .icon-text {
+  display: inline; /* Show text on hover */
+  font-size: larger;
+  font-weight: bold;
+}
+
+.note-pop {
   position: absolute;
-  top: 2%; 
+  top: 5%; 
+  bottom: 5%;
   right: 10px; 
   width: 30%;
-  height: 96%;
   background-color: #FEFFC1;
-  border: 1px solid #FFC369;
-  border-radius: 5px;
+  /* border: 1px solid #FFC369; */
+  border-radius: 10px;
   color: black;
+  box-shadow: 0px 5px 0px #FFC369;
 }
 
-#popup-title-bar {
+#note-close-button {
+  background-color: #FFC369;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #FFC369;
-  margin-bottom: 10px;
-  font-size: 18px; /* Set text size to 18 pixels */
-  font-weight: bold; /* Set text boldness */
-  padding: 0 20px;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+  height: 10%;
+  padding-right: 10px;
 }
 
-
-#popup-title-bar button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 0 20px;
-  font-weight: bold; /* Set text boldness */
-}
-
-.popUp textarea{
+.note-pop textarea{
   box-sizing: border-box;
   border: none;
   background-color: #FEFFC1;
-  width: 90%;
-  height: 80%;
-  margin: 0px 10px;
-  padding: 10px;
+  width: 96%;
+  height: 86%;
+  margin: 2%;
+  padding: 2%;
   font-family: "Andika", sans-serif;
   font-style: normal;
   font-size: 15px;

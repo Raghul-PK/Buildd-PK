@@ -1,12 +1,8 @@
 import React from 'react';
-import './Main.css';
+import '../Main.css';
 
-import MenuIcon from "@mui/icons-material/Menu";
-import FlashOnIcon from '@mui/icons-material/FlashOn';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import HomeIcon from '@mui/icons-material/Home';
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import Diversity3Icon from '@mui/icons-material/Diversity3';
+import MainHeader from "../components/MainHeader";
+import MainModeSelector from "../components/MainModeSelector";
 
 import {Link} from "react-router-dom";
 
@@ -53,22 +49,10 @@ let learningPathCards = [
   }
 ];
 
-const Main = () => {
+const LearnMode = () => {
   return (
     <>
-      <div class="header">
-          <div className="usermenu-box">
-            <MenuIcon className='usermenu-icon'/>
-          </div>
-        <div className="rewards-box">
-          <div className="reward-container">
-            <FlashOnIcon className='reward-icon'/>3
-          </div>
-          <div className="reward-container">
-            <FavoriteIcon className='reward-icon'/>490
-          </div>
-        </div>
-      </div>
+      <MainHeader/>
 
       <div className="screen">
         <h1>EXPLORE NEW PATHS</h1>
@@ -84,22 +68,9 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="footer">
-        <button className="menu-option" id="home-menu">
-          <HomeIcon className='menu-icon'/>
-          <div className='menu-text'>Home</div>
-        </button>
-        <button className="menu-option" id="learn-menu">
-          <TipsAndUpdatesIcon className='menu-icon'/>
-          <div className='menu-text'>Learn</div>
-        </button>
-        <button className="menu-option" id="social-menu">
-          <Diversity3Icon className='menu-icon'/>
-          <div className='menu-text'>Social</div>
-        </button>
-      </div>
+      <MainModeSelector/>
     </>
   )
 }
 
-export default Main;
+export default LearnMode;

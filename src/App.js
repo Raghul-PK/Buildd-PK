@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import Main from './Main';
-import Quiz from './Quiz';
+import LearnMode from './pages/LearnMode';
+import Quiz from './pages/Quiz';
 
 function App() {
  return (
    <div>
      <Routes>
-       <Route path="/" element={<Main />} />
+       <Route path="/" element={<LearnMode />} />
        <Route path="/quiz" element={<Quiz />} />
      </Routes>
    </div>

@@ -1,8 +1,9 @@
 import React, {useState, useEffect, useRef} from 'react';
 import Button from '@mui/material/Button';
-import './Quiz.css'; // Import your CSS file for styling
+import '../Quiz.css'; // Import your CSS file for styling
 import Confetti from 'react-confetti';
-import Popup from 'reactjs-popup';
+
+import PopupNote from '../components/PopupNote';
 
 let questions = [
   {
@@ -132,52 +133,6 @@ function Quiz() {
     );
   };
 
-  const PopUpNote = () => {
-    const [noteOpen, setNoteOpen] = useState(false);
-    const [noteVal, setNoteVal] = useState("");
-    const myTextarea = useRef(null);
-
-    const toggleNoteOpen = () => {
-      setNoteOpen(!noteOpen);
-    };
-
-    return (
-      <>
-        {!noteOpen && <div className="sideBar">
-          <Button className="note" variant="outlined" 
-            style={{backgroundColor: '#FEFFC1', border: '1px solid #FFC369', borderRadius: '5px', 'color':'black'}}
-            onClick={toggleNoteOpen}>Note</Button>
-        </div>}
-        {noteOpen && 
-        <div className='popUp'>
-          <div id="popup-title-bar">
-            <p id="popup-title">Notes</p>
-            <button onClick={toggleNoteOpen}>X</button>
-          </div>
-          <textarea 
-            value={localStorage.getItem('note') === null ? 
-              "Note: Clear this space and add your ideas here...\n\n" +
-              "- Target Audience: Explore more on this ???\n" +
-              "- How do companies reach their target audience?\n\n\n" +
-              "- How can I join Buildd?\n" +
-              "  - Possible ideas\n" +
-              "    - Show them your love for Buildding stuff\n" +
-              "    - Show them you are a little consistent" :
-              localStorage.getItem('note')}
-
-            ref={myTextarea} 
-            name="paragraph_text" 
-            onChange={(event)=>
-              {
-                console.log(event.target.value);
-                setNoteVal(event.target.value);
-                localStorage.setItem('note', event.target.value);
-              }}></textarea>
-        </div>}
-      </>
-    );
-  }; 
-
   const SubmitButton= () => {
     if (answerStatus=="correct")
     {
@@ -187,36 +142,36 @@ function Quiz() {
       }, 5000);
 
       return (
-      <div className="bottomBar"
+      <div className="submitBar"
         style={{border: '1px solid black', backgroundColor: '#E9FFEC', color:'#3FB14E', borderColor:'#3FB14E', borderRadius: '10px'}} >
-        <p style={{fontWeight: '700', fontSize:'large'}}>Amazing! That's correct</p>
-        <p>{questions[questionNo]["explanation"]}</p>
+        <p style={{fontWeight: '700', fontSize:'large', margin:'10px'}}>Amazing! That's correct</p>
+        <p style={{margin:'10px'}}>{questions[questionNo]["explanation"]}</p>
         <Button variant="outlined" 
-          style={{backgroundColor: '#3FB14E', border: '0px', borderRadius: '5px'}}
+          style={{backgroundColor: '#3FB14E', border: '0px', borderRadius: '5px', boxShadow: '0px 5px 0px #93D89D'}}
           onClick={() => GotoNextQuestion()}>Next Question</Button>
       </div>);
     } else if (answerStatus=="wrong")
     {
       return (
-      <div className="bottomBar"
+      <div className="submitBar"
         style={{border: '1px solid black', backgroundColor: '#FFE5E4', color:'#FF3130', borderColor:'#FF3130', borderRadius: '10px'}} >
-        <p style={{fontWeight: '700', fontSize:'large'}}>Uh-oh! That's incorrect</p>
-        <p>{questions[questionNo]["explanation"]}</p>
+        <p style={{fontWeight: '700', fontSize:'large', margin:'10px'}}>Uh-oh! That's incorrect</p>
+        <p style={{margin:'10px'}}>{questions[questionNo]["explanation"]}</p>
         <Button variant="outlined" 
-          style={{backgroundColor: '#FF3130', border: '0px', borderRadius: '5px'}}
+          style={{backgroundColor: '#FF3130', border: '0px', borderRadius: '5px', boxShadow: '0px 5px 0px #FE8A8A'}}
           onClick={() => GotoNextQuestion()}>Next Question</Button>
       </div>);
     }
 
-    return (<div className="bottomBar">
+    return (<div className="submitBar">
       <Button variant="outlined"
-        style={{backgroundColor:'#F9F4F2', color:'black', borderColor:'#E3E2E2', border: '1px solid', borderRadius: '5px'}}
+        style={{backgroundColor: '#E0E0E0', color: '#747474', border: '0px', borderRadius: '5px', boxShadow: '0px 5px 0px #CACACA'}}
         onClick={() => handleSubmitClick()}>Submit</Button>
     </div>);
   }
 
   return (
-    <div className="App">
+    <div className="Quiz">
       <LoadingBar/>
       <div className="container">
         <div className="leftHalf">
@@ -237,7 +192,7 @@ function Quiz() {
         </div>
         {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
       </div>
-      <PopUpNote/>
+      <PopupNote/>
       <SubmitButton/>
     </div>
   );
