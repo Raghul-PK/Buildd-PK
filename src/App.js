@@ -6,8 +6,8 @@ function App() {
  return (
    <div>
      <Routes>
-       <Route path="/Buildd-PK" element={<Main />} />
-       <Route path="/Buildd-PK/quiz" element={<Quiz />} />
+       <Route path="/" element={<Main />} />
+       <Route path="/quiz" element={<Quiz />} />
      </Routes>
    </div>
  );
