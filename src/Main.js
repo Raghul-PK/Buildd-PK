@@ -8,18 +8,48 @@ import HomeIcon from '@mui/icons-material/Home';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 
-let learningPaths = [
-  "images/learningPaths/1.jpeg",
-  "images/learningPaths/2.jpeg",
-  "images/learningPaths/3.jpeg",
-  "images/learningPaths/4.jpeg",
-  "images/learningPaths/5.jpeg",
-  "images/learningPaths/6.jpeg",
-  "images/learningPaths/7.jpeg",
-  "images/learningPaths/8.jpeg",
-  "images/learningPaths/9.jpeg",
-  "images/learningPaths/10.jpeg"
-]
+let learningPathCards = [
+  {
+    "img_path": "images/learningPaths/1.jpeg",
+    "caption": "Business models 101"
+  },
+  {
+    "img_path": "images/learningPaths/2.jpeg",
+    "caption": "Top razors for decision making"
+  },
+  {
+    "img_path": "images/learningPaths/3.jpeg",
+    "caption": "Business vocabulary 101"
+  },
+  {
+    "img_path": "images/learningPaths/4.jpeg",
+    "caption": "Business myths busted"
+  },
+  {
+    "img_path": "images/learningPaths/5.jpeg",
+    "caption": "Product myths busted"
+  },
+  {
+    "img_path": "images/learningPaths/6.jpeg",
+    "caption": "Psychological biases"
+  },
+  {
+    "img_path": "images/learningPaths/7.jpeg",
+    "caption": "11 business frameworks"
+  },
+  {
+    "img_path": "images/learningPaths/8.jpeg",
+    "caption": "Basics of digital marketing"
+  },
+  {
+    "img_path": "images/learningPaths/9.jpeg",
+    "caption": "The art of copywriting"
+  },
+  {
+    "img_path": "images/learningPaths/10.jpeg",
+    "caption": "SEO: Basics and Beyond"
+  }
+];
 
 const Main = () => {
   return (
@@ -41,16 +71,12 @@ const Main = () => {
       <div className="screen">
         <h1>EXPLORE NEW PATHS</h1>
         <div className="grid-container">
-          <div className="card"><img src={learningPaths[0]}/></div>
-          <div className="card"><img src={learningPaths[1]}/></div>
-          <div className="card"><img src={learningPaths[2]}/></div>
-          <div className="card"><img src={learningPaths[3]}/></div>
-          <div className="card"><img src={learningPaths[4]}/></div>
-          <div className="card"><img src={learningPaths[5]}/></div>
-          <div className="card"><img src={learningPaths[6]}/></div>
-          <div className="card"><img src={learningPaths[7]}/></div>
-          <div className="card"><img src={learningPaths[8]}/></div>
-          <div className="card"><img src={learningPaths[9]}/></div>
+          {learningPathCards.map((card, index) => (
+            <div className="card" key={index}>
+              <img src={card.img_path} alt={card.caption} />
+              <p>{card.caption}</p>
+            </div>
+          ))}
         </div>
       </div>
 
