@@ -8,6 +8,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 
+import {Link} from "react-router-dom";
+
 let learningPathCards = [
   {
     "img_path": "images/learningPaths/1.jpeg",
@@ -72,10 +74,12 @@ const Main = () => {
         <h1>EXPLORE NEW PATHS</h1>
         <div className="grid-container">
           {learningPathCards.map((card, index) => (
-            <div className="card" key={index}>
-              <img src={card.img_path} alt={card.caption} />
-              <p>{card.caption}</p>
-            </div>
+            <Link to="/quiz">
+              <div className="card" key={index}>
+                <img src={card.img_path} alt={card.caption} />
+                <p>{card.caption}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
