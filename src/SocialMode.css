@@ -1,0 +1,176 @@
+.social-container {
+    height: 100vh;
+    overflow-y:auto;
+}
+
+/* ============ Sidebar ============================== */
+.side-bar{
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 18%;
+    border: 1px solid #FFC369;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+.side-bar h1{
+    padding: 2px;
+    color: black;
+    font-weight: 500;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.side-bar p{
+    padding: 2px;
+    color: #747474;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.side-bar p:hover{
+    color: #000000;
+    font-weight: bold;
+    background-color: #FEFFC1;
+}
+
+/* ============ Main Posts Section =================== */
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid #FFC369;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.post-card-top-bar{
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    margin: 2% 0 0 0;
+}
+
+.post-card-top-bar > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-card-bottom-bar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 2% 0;
+}
+
+.post-card-bottom-bar > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* =============  Founder Stories card ==============*/
+.founder-card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+    border-top: 1px solid #FFC369;
+    border-bottom: 1px solid #FFC369;
+}
+
+.founder-card > #founder-img{
+    width: 40%;
+    border-radius: 10px;
+    margin: 2% 5% 2% 5%;
+}
+
+.founder-card > #founder-details{
+    width: 30%;
+    margin: 2% 5% 2% 5%;
+}
+
+#founder-details{
+    align-content: center;
+}
+
+#founder-details > .name{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#founder-details > .designation{
+    margin-bottom: 1rem;
+}
+
+/* =============  Case Studies card ==============*/
+.case-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2%;
+    border-top: 1px solid #FFC369;
+    border-bottom: 1px solid #FFC369;
+}
+
+.case-card > #case-img {
+    margin: 2% 0;
+    border-radius: 10px;
+}
+
+.case-card > #case-details > .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.case-card > #case-details {
+    margin-bottom: 2%;
+}
+
+/* =============  Business Shorts card ==============*/
+.shorts-card {
+    position: relative;
+    margin: 2%;
+    border-top: 1px solid #FFC369;
+    border-bottom: 1px solid #FFC369;
+}
+
+.shorts-card img{
+    width: 80%;
+    margin: 2% 0 2% 10%;
+    border-radius: 10px;
+}
+
+/* =============  Lessons card ==============*/
+.lessons-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2%;
+    border-top: 1px solid #FFC369;
+    border-bottom: 1px solid #FFC369;
+    padding: 2%;
+}
+
+.lessons-text-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lessons-text-button button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FE8A8A;
+}

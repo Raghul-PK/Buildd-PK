@@ -68,13 +68,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
     width:100px;
     border: none;
     background-color: #FEFFC1;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 18px;
+    padding:5%;
 }
 
 .footer .menu-option:hover{
@@ -82,7 +82,7 @@
 }
 
 .footer .menu-icon{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #home-menu{
@@ -97,53 +97,6 @@
     border-radius: 10px 40px 40px 10px;
 }
 
-.screen{
-    margin: 20px 20% 0 20%;
-    height: 100vh;
-    overflow: auto;
-}
-
-.screen h1{
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 10px 250px 10px;
-  }
-
-.card {
-    height: 200px;
-    width: 200px;
-    background-color: #FEFFC1;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-  }
-
-.card img{
-    width: 75%;
-    height: auto;
-}
-
-.card p{
-    margin: 10px;
-    text-align: center;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Main.css';
+import '../LearnMode.css';
 
 import MainHeader from "../components/MainHeader";
 import MainModeSelector from "../components/MainModeSelector";
@@ -54,12 +55,12 @@ const LearnMode = () => {
     <>
       <MainHeader/>
 
-      <div className="screen">
+      <div className="learn-container">
         <h1>EXPLORE NEW PATHS</h1>
         <div className="grid-container">
           {learningPathCards.map((card, index) => (
             <Link to="/quiz">
-              <div className="card" key={index}>
+              <div className="lesson-card" key={index}>
                 <img src={card.img_path} alt={card.caption} />
                 <p>{card.caption}</p>
               </div>
