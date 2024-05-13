@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../Main.css';
 import '../SocialMode.css';
 
@@ -9,9 +9,15 @@ import CaseStudiesCard from '../components/Cards/CaseStudiesCard';
 import BusinessShortsCard from '../components/Cards/BusinessShorts';
 import LessonsCard from '../components/Cards/LessonsCard';
 
-import {Link} from "react-router-dom";
+import posts from "../content/posts_content.js";
 
 const SocialMode = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    setData(posts);
+  }, []);
+
   return (
     <>
       <MainHeader/>
@@ -30,13 +36,21 @@ const SocialMode = () => {
         </div>
 
         <div className="posts">
-            <FounderStoriesCard/>
-            <BusinessShortsCard/>
-            <CaseStudiesCard/>
-            <LessonsCard/>
-            <FounderStoriesCard/>
-
+          {data && data.map((post, index) => {
+            if (post.type === "FounderStories") {
+              return <FounderStoriesCard key={index} post_data={post} />;
+            } else if (post.type === "BusinessShorts") {
+              return <BusinessShortsCard key={index} post_data={post} />;
+            } else if (post.type === "CaseStudies") {
+              return <CaseStudiesCard key={index} post_data={post} />;
+            } else if (post.type === "Lessons") {
+              return <LessonsCard key={index} post_data={post} />;
+            } else {
+              return null;
+            }
+          })}
         </div>
+        
       </div>
 
       <MainModeSelector/>

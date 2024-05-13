@@ -3,9 +3,11 @@ import React, {useState} from 'react';
 import CardBottomBar from './CardBottomBar';
 import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
 
-const LessonsCard = () => {
-  const mistakeLabel = "Your startup isn’t successful if it isn’t worth a billion dollars";
-  const lessonLabel = "All startups don’t become unicorns. Buildd something that can give you the lifestyle you desire and the happiness you seek.";
+const LessonsCard = (props) => {
+  const {post_data} = props;
+
+  const mistakeLabel = post_data.card_content.mistake_title;
+  const lessonLabel = post_data.card_content.lesson_title;
   const lessonColor = "#93D89D";
   const mistakeColor = "#FE8A8A";
   const lessonColorBG = "#E9FFEC";
@@ -40,7 +42,7 @@ const LessonsCard = () => {
             <div id="coins">
                 <p style={{ fontSize: '1.5rem', marginRight:'2px' }}>Claim</p>
                 <MonetizationOnOutlinedIcon style={{ fontSize: '2rem' }}/>
-                <p style={{ fontSize: '1.5rem' }}>75</p>
+                <p style={{ fontSize: '1.5rem' }}>{post_data.coins}</p>
             </div>
         </div>
 
@@ -54,7 +56,7 @@ const LessonsCard = () => {
             </div>
         </div>
         
-        <CardBottomBar/>
+        <CardBottomBar likes={post_data.likes_count} bookmarks={post_data.bookmarks_count} comments={post_data.comments_count}/>
     </div>
   )
 }
