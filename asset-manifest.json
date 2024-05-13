@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Buildd-PK/static/css/main.1a83d73e.css",
-    "main.js": "/Buildd-PK/static/js/main.36913b0e.js",
+    "main.js": "/Buildd-PK/static/js/main.fe71b005.js",
     "index.html": "/Buildd-PK/index.html",
     "main.1a83d73e.css.map": "/Buildd-PK/static/css/main.1a83d73e.css.map",
-    "main.36913b0e.js.map": "/Buildd-PK/static/js/main.36913b0e.js.map"
+    "main.fe71b005.js.map": "/Buildd-PK/static/js/main.fe71b005.js.map"
   },
   "entrypoints": [
     "static/css/main.1a83d73e.css",
-    "static/js/main.36913b0e.js"
+    "static/js/main.fe71b005.js"
   ]
 }
