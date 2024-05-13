@@ -1,7 +1,7 @@
 **All my learnings while building this app comes here;**
 
 **UI/UX**
-1. Inspired from Google's Read Along and LinkedIn. However, the overall Poor look quality might be attributed to the person who coded this project (me)
+1. Inspired from Google's Read Along and LinkedIn. However, the overall Poor look quality might be attributed to the person who built this project (me)
 2. Idea is to create lots of interactive touch-points for the user to learn actively instead of just passive consuming
 
 **New Feature (added)**
