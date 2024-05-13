@@ -10,6 +10,7 @@
 
 **New Feature ideas (to add)**
 1. Magic Searchbar : Ask it anything related to businness/products. It will provide you answers regarding the question/problem asked and find and load relevant posts and learning sections for the user to skill them up.
+2. Buildd Gallery : Buildders can build and showcase their stuff here, for fellow users to give feedbacks.
 
 **Deploying an app on Github Pages with client-side routing**
 
