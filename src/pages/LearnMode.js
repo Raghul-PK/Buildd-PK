@@ -53,7 +53,7 @@ let learningPathCards = [
 const LearnMode = () => {
   return (
     <>
-      <MainHeader/>
+      <MainHeader />
 
       <div className="learn-container">
         <h1>EXPLORE NEW PATHS</h1>
@@ -69,7 +69,7 @@ const LearnMode = () => {
         </div>
       </div>
 
-      <MainModeSelector/>
+      <MainModeSelector mode={"learn"}/>
     </>
   )
 }

@@ -5,7 +5,7 @@ import CardTopBar from './CardTopBar';
 
 import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
 
-const BusinessShortsCard = (props) => {
+const VideosCard = (props) => {
   const {post_data} = props;
 
   return (
@@ -22,4 +22,4 @@ const BusinessShortsCard = (props) => {
   )
 }
 
-export default BusinessShortsCard
+export default VideosCard

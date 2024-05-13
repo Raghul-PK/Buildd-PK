@@ -11,7 +11,7 @@ const SocialMode = () => {
     <>
       <MainHeader/>
 
-      <MainModeSelector/>
+      <MainModeSelector mode={"home"}/>
     </>
   )
 }

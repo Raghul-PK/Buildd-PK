@@ -81,6 +81,20 @@
     background-color: #FFC369;
 }
 
+.footer .menu-option-on{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    border: none;
+    background-color: #f7b34e;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    padding:5%;
+}
+
 .footer .menu-icon{
     font-size: 35px;
 }

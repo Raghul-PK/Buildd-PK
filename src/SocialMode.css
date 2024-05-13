@@ -37,6 +37,13 @@
     background-color: #FEFFC1;
 }
 
+.side-bar .on{
+    color: #000000;
+    font-weight: bold;
+    background-color: #FFC369;
+}
+
+
 /* ============ Main Posts Section =================== */
 
 .posts {
