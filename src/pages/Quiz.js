@@ -4,6 +4,7 @@ import '../Quiz.css'; // Import your CSS file for styling
 import Confetti from 'react-confetti';
 
 import PopupNote from '../components/PopupNote';
+import '../PopupNote.css'
 
 let questions = [
   {

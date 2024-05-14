@@ -11,6 +11,9 @@ import LessonsCard from '../components/Cards/LessonsCard';
 
 import posts from "../content/posts_content.js";
 
+import PopupNote from '../components/PopupNote';
+import '../PopupNote.css'
+
 const SocialMode = () => {
   const [filter, setFilter] = useState("Feed");
   const [content, setContent] = useState(posts);
@@ -61,6 +64,7 @@ const SocialMode = () => {
         
       </div>
 
+      <PopupNote/>
       <MainModeSelector mode={"social"}/>
     </>
   );

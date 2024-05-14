@@ -7,6 +7,9 @@ import MainModeSelector from "../components/MainModeSelector";
 
 import {Link} from "react-router-dom";
 
+import PopupNote from '../components/PopupNote';
+import '../PopupNote.css'
+
 let learningPathCards = [
   {
     "img_path": "images/learningPaths/1.jpeg",
@@ -69,6 +72,7 @@ const LearnMode = () => {
         </div>
       </div>
 
+      <PopupNote/>
       <MainModeSelector mode={"learn"}/>
     </>
   )
