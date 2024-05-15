@@ -48,15 +48,18 @@ const SocialMode = () => {
 
         <div className='journey-card'>
           <div className='journey-title'>
-            <ArrowBackIosIcon onClick={prevClick} style={{fontSize: 40, marginRight:5}}/>
+            <ArrowBackIosIcon onClick={prevClick} className='back-button' />
               {curJourneyCard.title}
-            <ArrowForwardIosIcon onClick={nextClick} style={{fontSize: 40, marginLeft:5}}/>
+            <ArrowForwardIosIcon onClick={nextClick} className='next-button' />
           </div>
           <div className='journey-body'>
             <img src={curJourneyCard.img_path} />
             <div className='path-cards'>
               {curJourneyCard && curJourneyCard.cards.map((card, index) => {
-                return <img className='path-card' src={card} />
+                return (<div className='path-card'>
+                  <img src={card}/>
+                  <Link to="/quiz"><button>Continue</button></Link>
+                </div>)
               })}
             </div>
           </div>
