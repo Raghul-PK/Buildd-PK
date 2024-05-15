@@ -1,8 +1,9 @@
 **All my learnings while building this app comes here;**
 
 **UI/UX**
-1. Inspired from Google's Read Along and LinkedIn. However, the overall Poor look quality might be attributed to the person who built this project (me)
+1. Inspired from Google's Read Along (Main Menu bar) and LinkedIn (Social section). However, the overall Poor look quality might be attributed to the person who built this project (me)
 2. Idea is to create lots of interactive touch-points for the user to learn actively instead of just passive consuming
+3. HomePage : The most difficult aspect for me to think of, but somehow thought of a design and implemented it (https://www.youtube.com/watch?v=6TYkDy54q4E&t=8s --> This guy's content is pure gold. Short, motivating and uplifting front-end dev stuff) 
 
 **New Feature (added)**
 1. Descriptions for MCQs answers
@@ -16,3 +17,7 @@
 
 Ref : https://medium.com/@swarajgosavi20/how-to-deploy-react-app-with-client-side-routing-on-github-pages-8a3fefe5b0d5
 1) Why do we use HashRouter instead of BrowserRouter and what is the difference ?
+
+**================================== Daily Journal =================================================**
+
+14/05/24 --> Added home page (I love the design). Still have to improve the Main menu bar design (it's unnecessarily occupying space and disturbing the interactivity). Also, have to learn and implement responsiveness across the website.
