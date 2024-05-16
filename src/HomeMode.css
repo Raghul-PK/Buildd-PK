@@ -9,6 +9,7 @@
     width: 50%;
     border: 1px solid black;
     border-radius: 20px;
+    background-color: white;
 }
 
 .journey-card > .journey-title{
@@ -48,7 +49,7 @@
 .journey-card > .journey-body > .path-cards > .path-card{
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 70%;
     border: 1px solid black;
     border-radius: 10px;
     position: absolute;

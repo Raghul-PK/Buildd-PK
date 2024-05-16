@@ -3,7 +3,6 @@ import '../Main.css';
 import '../HomeMode.css';
 
 import MainHeader from "../components/MainHeader";
-import MainModeSelector from "../components/MainModeSelector";
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -39,7 +38,7 @@ const SocialMode = () => {
 
   return (
     <>
-      <MainHeader/>
+      <MainHeader mode={"home"}/>
 
       <div className="home-container">
         <div className='streak-card'>
@@ -67,7 +66,6 @@ const SocialMode = () => {
       </div>
 
       <PopupNote/>
-      <MainModeSelector mode={"home"}/>
     </>
   )
 }

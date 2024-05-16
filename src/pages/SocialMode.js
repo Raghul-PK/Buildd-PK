@@ -3,7 +3,6 @@ import '../Main.css';
 import '../SocialMode.css';
 
 import MainHeader from "../components/MainHeader";
-import MainModeSelector from "../components/MainModeSelector";
 import FounderStoriesCard from '../components/Cards/FounderStoriesCard';
 import CaseStudiesCard from '../components/Cards/CaseStudiesCard';
 import VideosCard from '../components/Cards/VideosCard';
@@ -31,7 +30,7 @@ const SocialMode = () => {
 
   return (
     <>
-      <MainHeader/>
+      <MainHeader mode={"social"}/>
 
       <div className='social-container'>
         <div className="side-bar">
@@ -65,7 +64,6 @@ const SocialMode = () => {
       </div>
 
       <PopupNote/>
-      <MainModeSelector mode={"social"}/>
     </>
   );
 };

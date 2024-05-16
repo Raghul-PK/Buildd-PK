@@ -3,7 +3,6 @@ import '../Main.css';
 import '../LearnMode.css';
 
 import MainHeader from "../components/MainHeader";
-import MainModeSelector from "../components/MainModeSelector";
 
 import {Link} from "react-router-dom";
 
@@ -56,7 +55,7 @@ let learningPathCards = [
 const LearnMode = () => {
   return (
     <>
-      <MainHeader />
+      <MainHeader mode={"learn"}/>
 
       <div className="learn-container">
         <h1>EXPLORE NEW PATHS</h1>
@@ -73,7 +72,6 @@ const LearnMode = () => {
       </div>
 
       <PopupNote/>
-      <MainModeSelector mode={"learn"}/>
     </>
   )
 }
