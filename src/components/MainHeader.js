@@ -19,6 +19,7 @@ const MainHeader = (props) => {
           <Link to="/"><p key="1" className={mode=="home"?"menu-option-on":"menu-option-off"}>Home</p></Link>
           <Link to="/learn"><p key="2" className={mode=="learn"?"menu-option-on":"menu-option-off"}>Learn</p></Link>
           <Link to="/social"><p key="3" className={mode=="social"?"menu-option-on":"menu-option-off"}>Social</p></Link>
+          <Link to="/buildd"><p key="4" className={mode=="buildd"?"menu-option-on":"menu-option-off"}>Buildd</p></Link>
         </div>
         <div className="rewards-box">
             <div className="reward-container">
