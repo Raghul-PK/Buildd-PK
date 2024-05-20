@@ -25,19 +25,19 @@ const person_cards = [
     },
     {
         "id":3,
-        "title":"Arjun Raj",
-        "tagline": "Ideator, Hardware",
-        "img_path":"images/builddCards/persons/arjun.jpeg",
-        "back_content": "Built prototypes of E-Vision, Sahayak walking stick and a few more gadgets",
-        "keywords":"software hardware ideation prototyping"
+        "title":"Pieter Levels",
+        "tagline": "Software, Indie Developer",
+        "img_path":"images/builddCards/persons/pieterlevels.png",
+        "back_content": "Built successful products as a solo-entrepreneur",
+        "keywords":"software website business"
     },
     {
         "id":4,
-        "title":"Vijay Krishna",
-        "tagline": "Team builder",
-        "img_path":"images/builddCards/persons/vijay.jpg",
-        "back_content": "Crucial member who formed a team for participating in SIH",
-        "keywords":"software team"
+        "title":"Marc Lou",
+        "tagline": "Software, Indie Developer",
+        "img_path":"images/builddCards/persons/marclou.png",
+        "back_content": "Built successful products as a solo-entrepreneur",
+        "keywords":"software website business"
     },
     {
         "id":5,

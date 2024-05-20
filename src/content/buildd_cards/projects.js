@@ -17,11 +17,11 @@ const project_cards = [
     },
     {
         "id":2,
-        "title":"E-Vision",
-        "tagline": "Tactile Graphical Display for Blind",
-        "img_path":"images/builddCards/projects/evision.jpg",
-        "back_content": "Enabling the visually challenged to understand images using tactile graphical display powered by electromagnetic actuation",
-        "keywords":"software hardware"
+        "title":"Curiozity Box",
+        "tagline": "Ideation Kits for children",
+        "img_path":"images/builddCards/projects/curiozitybox.jpeg",
+        "back_content": "Ideation kits that aim to ",
+        "keywords":"hardware"
     },
     {
         "id":3,

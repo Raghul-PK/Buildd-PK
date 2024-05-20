@@ -1,5 +1,11 @@
 **All my learnings while building this app comes here;**
 
+**Changes to do in package.json while running locally vs pushing to Github pages for deployment**
+Add these lines while deployment
+1. "homepage": "https://raghul-pk.github.io/Buildd-PK/", (line-5) 
+2. (inside scripts) "predeploy": "npm run build", (line-23)
+    "deploy": "gh-pages -d build", (line-24)
+
 **UI/UX**
 1. Inspired from Google's Read Along (Main Menu bar) and LinkedIn (Social section). However, the overall Poor look quality might be attributed to the person who built this project (me)
 2. Idea is to create lots of interactive touch-points for the user to learn actively instead of just passive consuming
